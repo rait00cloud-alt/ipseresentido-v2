@@ -1,0 +1,39 @@
+---
+
+
+
+import Layout from '../layouts/Layout.astro';
+
+import BackgroundVideo from '../components/UI/bgVideo';
+
+import ServicesCarousel from '../components/UI/ServicesCarousel';
+import AboutInstitute from '../components/Home/SolutionsHero';
+import BlogContainer from '../components/Home/BlogContainer';
+import FaqContainer from '../components/Home/FaqContainer';
+import TestimonialsContainer from '../components/Home/TestimonialsContainer';
+import WelcomeSituations from '../components/Home/WelcomeSituations';
+import CareFeatures from '../components/Home/CareFeatures';
+
+---
+
+<Layout title="Instituto de Psicologia Ser e Sentido">
+
+	<div class="relative w-full justify-center items-center bg-black">
+			
+
+			<BackgroundVideo desktopSrc="/videos/instituto-ser-e-sentido-v2.mp4"  mobileSrc="/videos/instituto-ser-e-sentido-v2.mp4" client:load/>
+			
+		</div>
+
+		<div class="flex flex-col w-full sm:overflow-hidden">
+			<ServicesCarousel client:load/>
+			<AboutInstitute client:load/>
+			<BlogContainer client:load/>
+			<WelcomeSituations client:load/>
+			<FaqContainer client:load/>
+			<TestimonialsContainer client:load/>
+			<CareFeatures client:load/>
+		</div>
+		
+	</div>
+</Layout>
