@@ -1,20 +1,28 @@
 ---
 const BLOG_ARTICLES = [
   {
-    id: "ansiedade-quando-buscar-ajuda",
-    title: "Ansiedade: Quando a Preocupação se Torna um Problema",
-    description: "Entenda a diferença entre ansiedade normal e transtorno de ansiedade, seus sintomas e quando buscar ajuda profissional.",
-    imgSrc: "/photos/blog-ansiedade.png",
-    readTime: "6 min",
-    date: "07 Mar 2026"
+    id: "o-que-e-a-nr1",
+    title: "O que é a lei NR1 e o que ela muda?",
+    description: "A atualização da NR-1 passou a exigir que empresas gerenciem riscos psicossociais no trabalho. Entenda o que muda na prática.",
+    imgSrc: "/materias/o-que-e-a-nr1.jpg",
+    readTime: "5 min",
+    date: "18 Mar 2026"
   },
   {
-    id: "saude-mental-importancia",
-    title: "Saúde Mental: Por Que Cuidar da Mente é Tão Importante",
-    description: "Descubra por que a saúde mental merece a mesma atenção que a saúde física e como a psicoterapia pode transformar sua vida.",
-    imgSrc: "/photos/blog-saude.png",
-    readTime: "7 min",
-    date: "07 Mar 2026"
+    id: "orientacao-parental-como-ajuda",
+    title: "Como a orientação dos pais pode me ajudar?",
+    description: "A orientação parental não é só para quando as coisas estão difíceis. Entenda como esse acompanhamento pode transformar a relação com seus filhos.",
+    imgSrc: "/materias/orientacao-parental-como-ajuda.jpg",
+    readTime: "5 min",
+    date: "19 Mar 2026"
+  },
+  {
+    id: "meu-filho-tem-um-diagnostico",
+    title: "Meu filho tem um diagnóstico e agora?",
+    description: "Receber o diagnóstico de um filho pode ser avassalador. Entenda como processar essa notícia e quais são os próximos passos.",
+    imgSrc: "/materias/meu-filho-tem-um-diagnostico.jpg",
+    readTime: "6 min",
+    date: "20 Mar 2026"
   }
 ];
 ---
@@ -75,7 +83,7 @@ const BLOG_ARTICLES = [
       </div>
       <a href="/blog" class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest hover:text-[#c89219] transition-colors">Ver todos →</a>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {BLOG_ARTICLES.map(article => (
         <a href={`/blog/${article.id}`} class="group bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all">
           <div class="aspect-video overflow-hidden">

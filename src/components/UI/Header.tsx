@@ -181,7 +181,7 @@ export default function HeaderComponent() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed inset-0 bg-[#f3ebe5]/95 z-[99] flex flex-col justify-center items-start px-12 overflow-y-auto"
+            className="fixed inset-0 bg-[#f3ebe5]/95 z-[99] flex flex-col justify-start items-start px-12 pt-28 overflow-y-auto"
           >
             <nav className="flex flex-col gap-6 mb-12 w-full">
               {MENU_ITEMS.map((item, i) =>
