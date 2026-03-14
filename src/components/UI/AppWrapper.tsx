@@ -9,7 +9,7 @@ export default function AppWrapper({ children }:any) {
     <>
     
       <HeaderComponent />
-      <main>{children}</main>
+      <main className="pt-[72px]">{children}</main>
       <FooterComponent />
       <FloatingWhatsApp />
     </>

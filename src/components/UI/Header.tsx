@@ -94,7 +94,7 @@ export default function HeaderComponent() {
     <>
       <header
         className={clsx(
-          "relative w-full z-[100] flex justify-between items-center px-8 sm:px-32 transition-all duration-500 py-4",
+          "fixed top-0 left-0 right-0 w-full z-[100] flex justify-between items-center px-8 sm:px-32 transition-all duration-500 py-4",
           scrolled ? "bg-white/70 backdrop-blur-sm md:shadow-md drop-shadow-sm" : "drop-shadow-sm sm:bg-white/80 bg-transparent",
           visible ? "translate-y-0" : "-translate-y-full"
         )}
