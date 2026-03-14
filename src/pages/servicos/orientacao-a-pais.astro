@@ -1,101 +1,77 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
-import ContactForm from '../../components/Contato/Form';
+import ServiceFooter from '../../components/Servicos/ServiceFooter.astro';
 ---
-
 <Layout title="Orientação a Pais - Instituto Ser e Sentido">
   <div class="w-full min-h-screen bg-[#faf8f5]">
-    
-    <section class="relative w-full h-[540px] md:h-[800px]">
-      <img
-        src="/photos/01.jpg"
-        alt="Orientação a Pais"
-        class="w-full h-full object-cover"
-      />
+
+    <section class="relative w-full h-[540px] md:h-[700px]">
+      <img src="/photos/clinica-02.png" alt="Orientação a Pais" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
       <div class="absolute bottom-0 left-0 right-0 px-8 md:px-16 py-12">
-        <div class="max-w-4xl mx-auto">
-          <h1 class="text-3xl md:text-5xl font-[BrandonBold] text-white mb-4">
-            Orientação a Pais
-          </h1>
-          <p class="text-lg md:text-xl text-white/90 font-[BrandonRegular]">
-            Suporte e orientação para pais no desenvolvimento saudável e emocional dos filhos
-          </p>
+        <div class="max-w-5xl mx-auto">
+          <div class="flex items-center gap-2 mb-3"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Introdução</p></div>
+          <h1 class="text-4xl md:text-6xl font-[BrandonBold] text-white mb-4 uppercase">Orientação a Pais</h1>
+          <p class="text-lg md:text-xl text-white/80 font-[BrandonRegular] max-w-2xl">Suporte psicológico para pais e responsáveis no desenvolvimento saudável e emocional dos filhos.</p>
         </div>
       </div>
     </section>
 
-    <section class="w-full py-16 px-8 md:px-16">
-      <div class="max-w-4xl mx-auto space-y-8">
-        
-        <div class="space-y-4">
-          <h2 class="text-3xl font-[BrandonBold] text-[#5a4a3a]">
-            O que é Orientação Parental?
-          </h2>
-          <p class="text-lg text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">
-            A orientação a pais é um espaço de acolhimento e apoio onde os responsáveis recebem suporte 
-            psicológico para lidar com desafios da parentalidade, compreender melhor o comportamento dos 
-            filhos e desenvolver estratégias educativas mais efetivas e afetivas.
-          </p>
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Como funciona</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O processo de orientação</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">As sessões são realizadas com os pais ou responsáveis, sem a presença da criança. O psicólogo escuta as dificuldades, compreende o contexto familiar e oferece orientações práticas e embasadas para lidar com os desafios da parentalidade.</p>
         </div>
-
-        <div class="space-y-4">
-          <h2 class="text-3xl font-[BrandonBold] text-[#5a4a3a]">
-            Para quem é indicada?
-          </h2>
-          <p class="text-lg text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">
-            Para pais e responsáveis que enfrentam dificuldades no manejo comportamental, questões relacionadas 
-            ao desenvolvimento infantil, conflitos familiares, dúvidas sobre limites e educação, ou que desejam 
-            fortalecer o vínculo com os filhos e promover um ambiente familiar mais saudável.
-          </p>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/psicoterapia-individual.webp" alt="Como funciona" class="w-full object-cover aspect-video" />
         </div>
-
-        <div class="space-y-4">
-          <h2 class="text-3xl font-[BrandonBold] text-[#5a4a3a]">
-            Temas abordados
-          </h2>
-          <ul class="space-y-3 text-lg text-[#6a5a4a] font-[BrandonRegular]">
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Estabelecimento de limites e rotinas</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Comunicação não-violenta com os filhos</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Manejo de birras e comportamentos desafiadores</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Desenvolvimento emocional infantil</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Fortalecimento do vínculo afetivo</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Adaptação a mudanças familiares</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-white rounded-2xl shadow-sm p-8 mt-12">
-          <h3 class="text-2xl font-[BrandonBold] text-[#5a4a3a] mb-4">
-            Benefícios
-          </h3>
-          <p class="text-lg text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">
-            Através da orientação parental, os pais desenvolvem maior segurança e confiança no exercício da 
-            parentalidade, compreendem melhor as necessidades emocionais dos filhos e constroem relações 
-            familiares mais harmoniosas e respeitosas.
-          </p>
-        </div>
-
       </div>
     </section>
 
-    
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row-reverse gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Para quem é</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">Para quem é este serviço</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Para pais, mães e responsáveis que enfrentam dificuldades no manejo comportamental dos filhos, dúvidas sobre limites e educação, conflitos familiares, ou que desejam fortalecer o vínculo afetivo e promover um ambiente familiar mais saudável.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/psi-infantil.jpg" alt="A quem se destina" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto space-y-8">
+        <div>
+          <div class="flex items-center gap-2 mb-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Indicações</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase mb-4">Quando buscar</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed max-w-2xl">A orientação parental é indicada em situações como:</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          {["Birras frequentes", "Dificuldades com limites", "Conflitos entre irmãos", "Separação dos pais", "Chegada de um novo filho", "Dificuldades escolares", "Comportamento agressivo", "Ansiedade infantil", "Luto na família", "Adoção", "Parentalidade consciente"].map(tag => (
+            <span class="px-4 py-2 border border-[#d7a21e] text-[#5a4a3a] font-[BrandonRegular] text-sm">{tag}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Objetivos</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O que se busca alcançar</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Desenvolver maior segurança e confiança no exercício da parentalidade, ampliar a compreensão sobre as necessidades emocionais dos filhos e construir relações familiares mais harmoniosas, respeitosas e afetivas.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/room.jpg" alt="Objetivos" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <ServiceFooter />
   </div>
 </Layout>
+

@@ -1,10 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import TeamCarousel from '../components/Equipe/TeamCarousel';
+import TeamSection from '../components/Equipe/TeamSection';
 ---
 
 <Layout title="Equipe - Instituto de Psicologia Ser e Sentido">
-	<section class="bg-gradient-to-b from-[#faf8f5] to-white ">
-		<TeamCarousel client:load />
+  <section class="p-8 bg-[#e8e0d0] sm:px-48 sm:py-16 flex flex-col gap-16">
+	<div class="justify-center items-center w-full flex ">
+		<img src='/logo/favicon.png' class="absolute z-0 max-w-[80px] translate-y-1 opacity-80"/>
+	<h1 class="text-6xl sm:text-md font-[BrandonBold] text-[#5e4e27] uppercase tracking-tight z-10 text-black tracking-tight">A Equipe</h1>
+	</div>
+	<TeamSection client:load />
 	</section>
 </Layout>

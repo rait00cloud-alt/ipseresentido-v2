@@ -9,7 +9,7 @@ type BackgroundVideoProps = {
 };
 
 export default function BackgroundVideo({
-  desktopSrc = "/videos/instituto-ser-e-sentido.mp4",
+  desktopSrc = "/videos/instituto-ser-e-sentido-v3.mp4",
   mobileSrc = "/videos/instituto-ser-e-sentido.mp4",
 }: BackgroundVideoProps) {
   const ref = useRef<HTMLDivElement | null>(null);

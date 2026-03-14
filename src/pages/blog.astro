@@ -17,7 +17,7 @@ const search = Astro.url.searchParams.get("search")?.toLowerCase() || "";
 
 <Layout title="Blog">
 
-  <div class="flex flex-col w-full py-16 px-4 sm:px-32 h-full sm:h-[900px] justify-start mt-4 items-center">
+  <div class="flex flex-col w-full py-16 px-4 sm:px-32 justify-start mt-4 items-center">
     <div class="flex justify-start items-start w-full sm:py-8 ">
       <BlogHeader client:load />
       </div>

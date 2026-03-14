@@ -7,64 +7,85 @@ const services = [
     id: 1,
     title: "Psicoterapia Adulto",
     text: "Acompanhamento psicológico para adultos em processos de autoconhecimento, desenvolvimento emocional e superação de desafios.",
-    image: "/photos/08.jpg",
+    image: "/photos/psi-adulto.jpg",
     slug: "psicoterapia-adulto"
   },
   {
     id: 2,
     title: "Psicoterapia Casal",
     text: "Atendimento especializado para casais que buscam fortalecer vínculos, resolver conflitos e construir relações mais saudáveis.",
-    image: "/photos/09.jpg",
+    image: "/photos/terapia-de-casal.avif",
     slug: "psicoterapia-casal"
   },
   {
     id: 3,
     title: "Psicoterapia Infantil",
     text: "Atendimento psicológico para crianças, promovendo desenvolvimento emocional saudável através de técnicas lúdicas e acolhedoras.",
-    image: "/photos/05.jpg",
+    image: "/photos/psi-infantil.jpg",
     slug: "psicoterapia-infantil"
   },
   {
     id: 4,
     title: "Psicoterapia para Adolescentes",
     text: "Acompanhamento especializado para adolescentes em fase de transformações, auxiliando no desenvolvimento da identidade e autonomia.",
-    image: "/photos/07.jpg",
+    image: "/photos/psci-adolescentes.webp",
     slug: "psicoterapia-adolescentes"
   },
   {
     id: 5,
     title: "Avaliação Bariátrica",
     text: "Avaliação psicológica especializada para pacientes que irão realizar cirurgia bariátrica, conforme exigências médicas.",
-    image: "/photos/06.jpg",
+    image: "/photos/aval-bariatrica.jpg",
     slug: "avaliacao-bariatrica"
   },
   {
     id: 6,
     title: "Avaliação Psicológica Adulto",
     text: "Processo completo de avaliação para compreender aspectos emocionais, cognitivos e comportamentais.",
-    image: "/photos/04.jpg",
+    image: "/photos/av-personalidade.jpg",
     slug: "avaliacao-psicologica-adulto"
   },
   {
     id: 7,
     title: "Avaliação Psicológica Infantil",
     text: "Avaliação especializada para crianças, identificando necessidades e potencialidades do desenvolvimento.",
-    image: "/photos/02.jpg",
+    image: "/photos/psi-infantil.jpg",
     slug: "avaliacao-psicologica-infantil"
   },
   {
     id: 8,
     title: "Orientação a Pais",
     text: "Suporte e orientação para pais no desenvolvimento saudável e emocional dos filhos.",
-    image: "/photos/01.jpg",
+    image: "/photos/clinica-02.png",
     slug: "orientacao-a-pais"
   },
   {
     id: 9,
     title: "Atendimento de Brasileiros no Exterior",
     text: "Atendimento online especializado para brasileiros que vivem fora do país.",
-    image: "/photos/03.jpg",
+    image: "/photos/psi-brasileiros-no-exterior.jpg",
     slug: "atendimento-brasileiros-exterior"
+  },
+  {
+    id: 10,
+    title: "Palestras para Empresas e Escolas",
+    text: "Palestras sobre saúde mental, liderança, bullying e neurodesenvolvimento para empresas e escolas.",
+    image: "/photos/palestra-emp-escolas.png",
+    slug: "palestras-empresas"
+  },
+  {
+    id: 11,
+    title: "Psicoterapia para Idosos",
+    text: "Acompanhamento psicológico especializado para idosos, promovendo qualidade de vida, autonomia e bem-estar emocional.",
+    image: "/photos/psicoterapia-idoso.jpeg",
+    slug: "psicoterapia-idoso"
+  },
+  {
+    id: 12,
+    title: "Avaliação Psicológica para Vasectomia",
+    text: "Avaliação psicológica obrigatória para homens que desejam realizar o procedimento de vasectomia.",
+    image: "/photos/aval-vasectomia.png",
+    slug: "avaliacao-vasectomia"
   }
 ];
 

@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'BrandonBold';
-    src: url('/fonts/AlegreyaSansSC-Light.ttf') format('truetype');
+    src: url('/fonts/allrounder-monument-book.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,28 +15,28 @@
 
 @font-face {
     font-family: 'BrandonLight';
-    src: url('/fonts/AlegreyaSansSC-Light.ttf') format('truetype');
+    src: url('/fonts/Brandon-Grotesque-Light.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BrandonMedium';
-    src: url('/fonts/AlegreyaSansSC-Medium.ttf') format('truetype');
+    src: url('/fonts/Brandon-Grotesque-Medium.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BrandonRegular';
-    src: url('/fonts/AlegreyaSansSC-Regular.ttf') format('truetype');
+    src: url('/fonts/Brandon-Grotesque-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Priestacy';
-    src: url('/fonts/AlegreyaSansSC-Thin.ttf') format('truetype');
+    src: url('/fonts/Priestacy.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

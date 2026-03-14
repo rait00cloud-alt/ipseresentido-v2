@@ -32,7 +32,7 @@ const FooterComponent = () => {
         </div>
 
         {/* Créditos */}
-        <div className="flex flex-col gap-2 items-center justify-between w-full  px-8 py-4 sm:px-64 sm:py-8 sm:gap-8  border-t border-black/20">
+        <div className="flex flex-col gap-2 items-center justify-between w-full  px-8 py-4 sm:px-48 sm:py-8 sm:gap-8  border-t border-black/20">
         <div className="w-full bg-white rounded-xl drop-shadow-sm sm:p-8 px-2 py-8">
   <div className="max-w-6xl mx-auto px-6">
     
@@ -78,14 +78,21 @@ const FooterComponent = () => {
             </div>
           </div>
            {/* Google Maps */}
-      <div className="flex-1 w-full sm:min-h-[480px] min-h-[380px] md:h-auto rounded-xl overflow-hidden">
+      <div className="flex-1 w-full aspect-video md:h-auto rounded-xl overflow-hidden">
         <iframe
           className="w-full h-full border-0"
           loading="lazy"
           allowFullScreen
-          src="https://www.google.com/maps?q=Av.+Marcelo+Stephanie+15+Bragança+Paulista&output=embed"
+           src="https://www.google.com/maps?q=-22.9696362,-46.5349639&z=16&output=embed"
         ></iframe>
       </div>
+
+       <p className="text-sm font-[BrandonRegular]">
+             Horário de funcionamento das 7h às 21h de segunda a sexta com hora
+marcada.
+O local possui estacionamento pago e estacionamento na rua gratuito,
+não tem cobertura
+              </p>
       </div>
         </div>
       </div>

@@ -1,0 +1,102 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+import ServiceFooter from '../../components/Servicos/ServiceFooter.astro';
+---
+<Layout title="Palestras para Empresas e Escolas - Instituto Ser e Sentido">
+  <div class="w-full min-h-screen bg-[#faf8f5]">
+
+    <section class="relative w-full h-[540px] md:h-[700px]">
+      <img src="/photos/palestra-emp-escolas.png" alt="Palestras para Empresas e Escolas" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+      <div class="absolute bottom-0 left-0 right-0 px-8 md:px-16 py-12">
+        <div class="max-w-5xl mx-auto">
+          <div class="flex items-center gap-2 mb-3"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Introdução</p></div>
+          <h1 class="text-4xl md:text-6xl font-[BrandonBold] text-white mb-4 uppercase">Palestras para Empresas e Escolas</h1>
+          <p class="text-lg md:text-xl text-white/80 font-[BrandonRegular] max-w-2xl">Palestras especializadas sobre saúde mental, liderança e desenvolvimento humano para contextos corporativos e educacionais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Como funciona</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O formato das palestras</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">As palestras são conduzidas por psicólogos com experiência clínica e acadêmica, adaptadas à realidade e ao público de cada organização. Podem ser realizadas presencialmente ou online, com duração e formato definidos conforme a necessidade do contratante.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/atend-grupo.png" alt="Como funciona" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row-reverse gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Para quem é</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">Para quem é este serviço</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Para empresas que desejam promover saúde mental e bem-estar entre seus colaboradores, e para escolas que buscam abordar temas relevantes com pais, alunos e professores de forma acessível, embasada e transformadora.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/cursos.png" alt="A quem se destina" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto space-y-16">
+
+        <!-- EMPRESAS -->
+        <div class="flex flex-col md:flex-row gap-12 items-start">
+          <div class="flex-1 space-y-4">
+            <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Palestras para Empresas</p></div>
+            <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">Para líderes, gestores e colaboradores</h2>
+            <div class="flex flex-wrap gap-3 pt-2">
+              {["Setembro Amarelo", "Saúde mental no ambiente de trabalho", "Tipos de liderança", "Comunicação assertiva em trabalho em equipe"].map(tag => (
+                <span class="px-4 py-2 border border-[#d7a21e] text-[#5a4a3a] font-[BrandonRegular] text-sm">{tag}</span>
+              ))}
+            </div>
+          </div>
+          <div class="w-full md:w-96 shrink-0">
+            <img src="/photos/palestra-emp-escolas.png" alt="Palestras para Empresas" class="w-full object-cover aspect-video" />
+          </div>
+        </div>
+
+        <hr class="border-t border-[#d7a21e]/20" />
+
+        <!-- ESCOLAS -->
+        <div class="flex flex-col md:flex-row-reverse gap-12 items-start">
+          <div class="flex-1 space-y-4">
+            <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Palestras para Escolas</p></div>
+            <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">Para pais, alunos e professores</h2>
+            <div class="flex flex-wrap gap-3 pt-2">
+              {["Desmistificando o bullying", "Como ajudar crianças a lidar com frustrações", "A importância da saúde mental do professor", "O impacto da rotina diária e sua importância para os pais e crianças", "Como adaptar a escola para transtornos do neurodesenvolvimento?"].map(tag => (
+                <span class="px-4 py-2 border border-[#d7a21e] text-[#5a4a3a] font-[BrandonRegular] text-sm">{tag}</span>
+              ))}
+            </div>
+          </div>
+          <div class="w-full md:w-96 shrink-0">
+            <img src="/photos/atend-grupo.png" alt="Palestras para Escolas" class="w-full object-cover aspect-video" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Objetivos</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O que se busca alcançar</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Promover cultura de saúde mental nos ambientes corporativo e escolar, ampliar o repertório de líderes, educadores e famílias para lidar com questões emocionais e comportamentais, e contribuir para ambientes mais saudáveis, empáticos e produtivos.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/room.jpg" alt="Objetivos" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <ServiceFooter />
+  </div>
+</Layout>
+

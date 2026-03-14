@@ -1,0 +1,93 @@
+---
+const BLOG_ARTICLES = [
+  {
+    id: "ansiedade-quando-buscar-ajuda",
+    title: "Ansiedade: Quando a Preocupação se Torna um Problema",
+    description: "Entenda a diferença entre ansiedade normal e transtorno de ansiedade, seus sintomas e quando buscar ajuda profissional.",
+    imgSrc: "/photos/blog-ansiedade.png",
+    readTime: "6 min",
+    date: "07 Mar 2026"
+  },
+  {
+    id: "saude-mental-importancia",
+    title: "Saúde Mental: Por Que Cuidar da Mente é Tão Importante",
+    description: "Descubra por que a saúde mental merece a mesma atenção que a saúde física e como a psicoterapia pode transformar sua vida.",
+    imgSrc: "/photos/blog-saude.png",
+    readTime: "7 min",
+    date: "07 Mar 2026"
+  }
+];
+---
+
+<!-- CTA -->
+<section class="relative w-full h-[480px] md:h-[560px] overflow-hidden">
+  <img src="/photos/office.webp" alt="Entre em contato" class="w-full h-full object-cover" />
+  <div class="absolute inset-0" style="background-color: rgba(94,78,39,0.82);" />
+  <div class="absolute inset-0 flex flex-col items-center justify-center px-8 text-center gap-10">
+
+    <div class="flex flex-col items-center gap-2">
+      <p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Estamos aqui para você</p>
+      <h2 class="text-4xl md:text-6xl font-[BrandonBold] text-white uppercase">Entre em Contato</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl text-white text-left">
+      <div class="flex flex-col gap-1">
+        <p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest mb-1">Agende sua consulta</p>
+        <p class="text-sm font-[BrandonRegular] leading-relaxed">
+          Centro Empresarial Jaguari<br />
+          Jd. do Lago – Av. Marcelo Stephanie nº 15<br />
+          Módulo 68 – Sala 1 – 1º andar<br />
+          CEP: 12914-490
+        </p>
+        <a href="tel:+5511992401530" class="text-sm font-[BrandonMedium] text-[#d7a21e] mt-2">(11) 99240-1530</a>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest mb-1">Forma de atendimento</p>
+        <p class="text-sm font-[BrandonRegular]">Consulta presencial<br />ou online</p>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest mb-1">Horário de atendimento</p>
+        <p class="text-sm font-[BrandonRegular]">De segunda à sexta<br />das 7h às 21h<br />com hora marcada</p>
+      </div>
+    </div>
+
+    <a
+      href="https://wa.me/5511992401530"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="px-8 py-3 border border-white text-white font-[BrandonBold] text-xs uppercase tracking-widest hover:bg-white hover:text-[#5e4e27] transition-colors"
+    >
+      Agendar consulta
+    </a>
+
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="w-full py-20 px-8 md:px-16 bg-[#faf8f5]">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex justify-between items-center mb-10">
+      <div class="flex items-center gap-3">
+        <img src="/logo/favicon.png" alt="" class="w-5 h-5 opacity-60" />
+        <h2 class="text-2xl md:text-3xl font-[BrandonBold] text-[#5e4e27] uppercase">Do Blog</h2>
+      </div>
+      <a href="/blog" class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest hover:text-[#c89219] transition-colors">Ver todos →</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {BLOG_ARTICLES.map(article => (
+        <a href={`/blog/${article.id}`} class="group bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all">
+          <div class="aspect-video overflow-hidden">
+            <img src={article.imgSrc} alt={article.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6 flex flex-col gap-2">
+            <h3 class="text-base font-[BrandonBold] text-[#5e4e27] group-hover:text-[#d7a21e] transition-colors uppercase">{article.title}</h3>
+            <p class="text-sm font-[BrandonRegular] text-[#6a5a4a] leading-relaxed line-clamp-2">{article.description}</p>
+            <p class="text-xs font-[BrandonRegular] text-[#d7a21e] mt-1">{article.readTime} · {article.date}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

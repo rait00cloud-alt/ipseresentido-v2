@@ -1,97 +1,77 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
-import ContactForm from '../../components/Contato/Form';
+import ServiceFooter from '../../components/Servicos/ServiceFooter.astro';
 ---
-
 <Layout title="Atendimento de Brasileiros no Exterior - Instituto Ser e Sentido">
   <div class="w-full min-h-screen bg-[#faf8f5]">
-    
-    <section class="relative w-full h-[540px] md:h-[800px]">
-      <img
-        src="/photos/03.jpg"
-        alt="Atendimento de Brasileiros no Exterior"
-        class="w-full h-full object-cover"
-      />
+
+    <section class="relative w-full h-[540px] md:h-[700px]">
+      <img src="/photos/psi-brasileiros-no-exterior.jpg" alt="Atendimento de Brasileiros no Exterior" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
       <div class="absolute bottom-0 left-0 right-0 px-8 md:px-16 py-12">
-        <div class="max-w-4xl mx-auto">
-          <h1 class="text-3xl md:text-5xl font-[BrandonBold] text-white mb-4">
-            Atendimento de Brasileiros no Exterior
-          </h1>
-          <p class="text-lg md:text-xl text-white/90 font-[BrandonRegular]">
-            Atendimento online especializado para brasileiros que vivem fora do país
-          </p>
+        <div class="max-w-5xl mx-auto">
+          <div class="flex items-center gap-2 mb-3"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Introdução</p></div>
+          <h1 class="text-4xl md:text-6xl font-[BrandonBold] text-white mb-4 uppercase">Atendimento de Brasileiros no Exterior</h1>
+          <p class="text-lg md:text-xl text-white/80 font-[BrandonRegular] max-w-2xl">Psicoterapia online em português para brasileiros que vivem fora do país.</p>
         </div>
       </div>
     </section>
 
-    <section class="w-full py-16 px-8 md:px-16">
-      <div class="max-w-4xl mx-auto space-y-8">
-        
-        <div class="space-y-4">
-          <h2 class="text-3xl font-[BrandonBold] text-[#5a4a3a]">
-            Psicoterapia Online para Brasileiros no Exterior
-          </h2>
-          <p class="text-lg text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">
-            Oferecemos atendimento psicológico online especializado para brasileiros que vivem fora do país, 
-            proporcionando suporte emocional em português, com compreensão das questões culturais e dos 
-            desafios específicos da experiência migratória.
-          </p>
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Como funciona</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O processo terapêutico</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">As sessões são realizadas online por videochamada segura, com horários flexíveis adaptados a diferentes fusos horários. O atendimento é conduzido inteiramente em português, com sigilo e ética profissional garantidos, seguindo as normas do CFP para atendimento online.</p>
         </div>
-
-        <div class="space-y-4">
-          <h2 class="text-3xl font-[BrandonBold] text-[#5a4a3a]">
-            Desafios da Vida no Exterior
-          </h2>
-          <p class="text-lg text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">
-            Viver em outro país traz desafios únicos: adaptação cultural, saudade da família, dificuldades 
-            com o idioma, questões de identidade, isolamento social e pressões relacionadas ao trabalho e 
-            expectativas. O acompanhamento psicológico ajuda a elaborar essas vivências.
-          </p>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/psi-online.png" alt="Como funciona" class="w-full object-cover aspect-video" />
         </div>
-
-        <div class="space-y-4">
-          <h2 class="text-3xl font-[BrandonBold] text-[#5a4a3a]">
-            Como funciona o atendimento?
-          </h2>
-          <ul class="space-y-3 text-lg text-[#6a5a4a] font-[BrandonRegular]">
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Sessões online por videochamada segura</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Horários flexíveis para diferentes fusos horários</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Atendimento em português</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Sigilo e ética profissional garantidos</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#d7a21e] font-bold">•</span>
-              <span>Abordagem sensível às questões culturais</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-white rounded-2xl shadow-sm p-8 mt-12">
-          <h3 class="text-2xl font-[BrandonBold] text-[#5a4a3a] mb-4">
-            Por que escolher nosso atendimento?
-          </h3>
-          <p class="text-lg text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">
-            Compreendemos as particularidades da experiência de viver longe de casa. Oferecemos um espaço 
-            acolhedor onde você pode se expressar em sua língua materna, ser compreendido em suas referências 
-            culturais e receber suporte qualificado para os desafios emocionais da vida no exterior.
-          </p>
-        </div>
-
       </div>
     </section>
 
-    
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row-reverse gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Para quem é</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">Para quem é este serviço</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Para brasileiros que vivem em qualquer país do mundo e buscam acompanhamento psicológico em sua língua materna, com um profissional que compreende a cultura brasileira e os desafios específicos da experiência de viver longe de casa.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/psicologa.png" alt="A quem se destina" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto space-y-8">
+        <div>
+          <div class="flex items-center gap-2 mb-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Indicações</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase mb-4">Quando buscar</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed max-w-2xl">O atendimento é indicado para brasileiros que enfrentam:</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          {["Choque cultural", "Saudade e luto migratório", "Isolamento social", "Ansiedade", "Depressão", "Dificuldades de adaptação", "Questões de identidade", "Pressão profissional", "Conflitos relacionais", "Crise existencial", "Dificuldades com o idioma local"].map(tag => (
+            <span class="px-4 py-2 border border-[#d7a21e] text-[#5a4a3a] font-[BrandonRegular] text-sm">{tag}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Objetivos</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O que se busca alcançar</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Oferecer um espaço acolhedor onde o paciente possa se expressar em sua língua materna, elaborar as vivências da experiência migratória, fortalecer recursos emocionais e construir uma relação mais saudável consigo mesmo e com o novo contexto de vida.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/room.jpg" alt="Objetivos" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <ServiceFooter />
   </div>
 </Layout>
+

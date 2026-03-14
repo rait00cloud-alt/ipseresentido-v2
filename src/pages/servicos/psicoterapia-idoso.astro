@@ -1,0 +1,77 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+import ServiceFooter from '../../components/Servicos/ServiceFooter.astro';
+---
+<Layout title="Psicoterapia para Idosos - Instituto Ser e Sentido">
+  <div class="w-full min-h-screen bg-[#faf8f5]">
+
+    <section class="relative w-full h-[540px] md:h-[700px]">
+      <img src="/photos/psicoterapia-idoso.jpeg" alt="Psicoterapia para Idosos" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+      <div class="absolute bottom-0 left-0 right-0 px-8 md:px-16 py-12">
+        <div class="max-w-5xl mx-auto">
+          <div class="flex items-center gap-2 mb-3"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Introdução</p></div>
+          <h1 class="text-4xl md:text-6xl font-[BrandonBold] text-white mb-4 uppercase">Psicoterapia para Idosos</h1>
+          <p class="text-lg md:text-xl text-white/80 font-[BrandonRegular] max-w-2xl">Acompanhamento psicológico especializado para idosos, promovendo qualidade de vida, autonomia e bem-estar emocional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Como funciona</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O processo terapêutico</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">As sessões são individuais, conduzidas com escuta atenta e respeito às particularidades do envelhecimento. O ritmo e a abordagem são adaptados às necessidades de cada pessoa, considerando aspectos físicos, emocionais e sociais dessa fase da vida.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/psicoterapia-individual.webp" alt="Como funciona" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row-reverse gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Para quem é</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">Para quem é este serviço</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Para pessoas a partir dos 60 anos que enfrentam desafios emocionais relacionados ao envelhecimento, perdas, aposentadoria, solidão, doenças crônicas ou que simplesmente buscam um espaço de escuta e cuidado com a saúde mental.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/old.jpg" alt="A quem se destina" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-white">
+      <div class="max-w-5xl mx-auto space-y-8">
+        <div>
+          <div class="flex items-center gap-2 mb-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Indicações</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase mb-4">Quando buscar</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed max-w-2xl">A psicoterapia para idosos é indicada em situações como:</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          {["Depressão", "Ansiedade", "Luto", "Solidão", "Aposentadoria", "Perda de autonomia", "Doenças crônicas", "Conflitos familiares", "Viuvez", "Dificuldades de memória", "Adaptação a mudanças", "Autoconhecimento"].map(tag => (
+            <span class="px-4 py-2 border border-[#d7a21e] text-[#5a4a3a] font-[BrandonRegular] text-sm">{tag}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 px-8 md:px-16 bg-[#f5f5f5]">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-4">
+          <div class="flex items-center gap-2"><img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-80" /><p class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">Objetivos</p></div>
+          <h2 class="text-3xl md:text-4xl font-[BrandonBold] text-[#5a4a3a] uppercase">O que se busca alcançar</h2>
+          <p class="text-base text-[#6a5a4a] font-[BrandonRegular] leading-relaxed">Promover qualidade de vida e bem-estar emocional, fortalecer a autonomia, ressignificar perdas e mudanças, e oferecer um espaço de escuta e acolhimento que contribua para um envelhecimento mais saudável e consciente.</p>
+        </div>
+        <div class="w-full md:w-96 shrink-0">
+          <img src="/photos/room.jpg" alt="Objetivos" class="w-full object-cover aspect-video" />
+        </div>
+      </div>
+    </section>
+
+    <ServiceFooter />
+  </div>
+</Layout>
+

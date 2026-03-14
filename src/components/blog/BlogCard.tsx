@@ -1,14 +1,16 @@
 
-// Cores para cada tipo de tag
-const TAG_COLORS = {
-  'Notícia': 'bg-blue-600',
-  'Educação Financeira': 'bg-green-600',
-  'Seguros': 'bg-purple-600',
-  'Planejamento': 'bg-orange-600',
-  'Investimentos': 'bg-teal-600',
-  'Saúde Mental': 'bg-[#d7a21e]',
-  'Bem-estar': 'bg-[#5e4e27]',
-  'default': 'bg-gray-600'
+// Cores para cada tipo de tag — paleta do instituto
+const TAG_COLORS: Record<string, string> = {
+  'Saúde Mental':          'bg-[#5e4e27]',   // marrom principal
+  'Psicoterapia':          'bg-[#7a6340]',   // marrom médio
+  'Bem-estar':             'bg-[#d7a21e]',   // dourado
+  'Psicologia Infantil':   'bg-[#a0845c]',   // terracota suave
+  'Adolescência':          'bg-[#8c7355]',   // marrom arenoso
+  'Parentalidade':         'bg-[#b8956a]',   // bege escuro
+  'Relacionamentos':       'bg-[#6b5744]',   // marrom profundo
+  'Saúde Mental no Trabalho': 'bg-[#4a3f2f]', // marrom escuro
+  'Ética e Profissão':     'bg-[#9e8060]',   // bronze
+  'default':               'bg-[#5e4e27]',
 };
 
 export default function BlogCard({ title, description, image, slug, type, por, data, socials }) {
