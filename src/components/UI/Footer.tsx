@@ -83,7 +83,7 @@ const FooterComponent = () => {
           className="w-full h-full border-0"
           loading="lazy"
           allowFullScreen
-           src="https://www.google.com/maps?q=-22.9696362,-46.5349639&z=16&output=embed"
+           src="https://www.google.com/maps/embed?pb=!4v1773494724288!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDkxWnF3S2c.!2m2!1d-22.96961644080089!2d-46.53508149827748!3f99.80888425030565!4f1.1225062172494376!5f0.7820865974627469"
         ></iframe>
       </div>
 
