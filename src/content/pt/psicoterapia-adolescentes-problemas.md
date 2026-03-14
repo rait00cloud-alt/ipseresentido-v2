@@ -1,7 +1,7 @@
 ---
 title: "Como a psicoterapia ajuda os adolescentes a enfrentarem seus problemas?"
 description: "A adolescência é uma fase intensa de transformações. Entenda como a psicoterapia pode ser um suporte fundamental para os jovens."
-cover: "/photos/psci-adolescentes.webp"
+cover: "/materias/psicoterapia-adolescentes-problemas.jpg"
 date: "2026-03-10"
 data: "Mar, 10, 2026"
 type: "Adolescência"

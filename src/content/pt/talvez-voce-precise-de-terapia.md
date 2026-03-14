@@ -1,7 +1,7 @@
 ---
 title: "Talvez você precise de terapia se…"
 description: "Alguns sinais sutis — e nem tão sutis — de que pode ser hora de buscar acompanhamento psicológico."
-cover: "/photos/psi-adulto.jpg"
+cover: "/materias/talvez-voce-precise-de-terapia.jpg"
 date: "2026-03-15"
 data: "Mar, 15, 2026"
 type: "Psicoterapia"

@@ -1,7 +1,7 @@
 ---
 title: "Saúde Mental: Por Que Cuidar da Mente é Tão Importante Quanto Cuidar do Corpo"
 description: "Descubra por que a saúde mental merece a mesma atenção que a saúde física e como a psicoterapia pode transformar sua vida"
-cover: "/photos/blog-saude.png"
+cover: "/materias/saude-mental-importancia.jpg"
 date: "2026-03-07"
 data: "Mar, 07, 2026"
 type: "Bem-estar"

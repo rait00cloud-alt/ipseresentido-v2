@@ -1,7 +1,7 @@
 ---
 title: "Psicoterapia: O que é e como funciona?"
 description: "Um guia completo para quem quer entender o que é psicoterapia, como funciona o processo e o que esperar das sessões."
-cover: "/photos/psicoterapia-individual.webp"
+cover: "/materias/psicoterapia-o-que-e-como-funciona.jpg"
 date: "2026-03-11"
 data: "Mar, 11, 2026"
 type: "Psicoterapia"

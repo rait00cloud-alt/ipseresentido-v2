@@ -1,7 +1,7 @@
 ---
 title: "O que é o sigilo da psicologia e como ele funciona?"
 description: "Entenda o que é o sigilo profissional do psicólogo, o que ele protege e quais são suas exceções previstas pelo Código de Ética."
-cover: "/photos/room.jpg"
+cover: "/materias/sigilo-da-psicologia.jpg"
 date: "2026-03-08"
 data: "Mar, 08, 2026"
 type: "Ética e Profissão"

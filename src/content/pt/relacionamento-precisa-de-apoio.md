@@ -1,7 +1,7 @@
 ---
 title: "Como saber se meu relacionamento precisa de apoio?"
 description: "Todo relacionamento passa por fases difíceis. Mas como saber quando é hora de buscar ajuda profissional? Entenda os sinais."
-cover: "/photos/terapia-de-casal.avif"
+cover: "/materias/relacionamento-precisa-de-apoio.jpg"
 date: "2026-03-17"
 data: "Mar, 17, 2026"
 type: "Relacionamentos"

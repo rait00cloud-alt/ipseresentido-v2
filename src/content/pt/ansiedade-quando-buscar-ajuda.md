@@ -1,7 +1,7 @@
 ---
 title: "Ansiedade: Quando a Preocupação se Torna um Problema"
 description: "Entenda a diferença entre ansiedade normal e transtorno de ansiedade, seus sintomas e quando buscar ajuda profissional"
-cover: "/photos/blog-ansiedade.png"
+cover: "/materias/ansiedade-quando-buscar-ajuda.png"
 date: "2026-03-07"
 data: "Mar, 07, 2026"
 type: "Saúde Mental"
