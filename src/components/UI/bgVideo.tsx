@@ -38,7 +38,7 @@ export default function BackgroundVideo({
   return (
     <section
       ref={ref}
-      className="relative w-full h-[540px] sm:h-[780px] overflow-hidden bg-black"
+      className="relative w-full h-[540px] sm:h-[640px] overflow-hidden bg-black"
     >
       {/* VIDEO BACKGROUND */}
       <video

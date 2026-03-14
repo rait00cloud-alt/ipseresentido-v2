@@ -33,7 +33,9 @@ const AboutInstitute: React.FC = () => {
 
           <div className="pt-4">
             <a 
-              href="#contato"
+              href="https://wa.me/5511992401530"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#d7a21e] hover:bg-[#c89219] text-white font-[BrandonBold] transition-all shadow-md hover:shadow-lg"
             >
               Agendar Atendimento

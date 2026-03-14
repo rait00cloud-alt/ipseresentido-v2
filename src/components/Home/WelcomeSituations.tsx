@@ -57,7 +57,9 @@ export default function WelcomeSituations() {
         {/* Botão Agendar */}
         <div className="flex justify-center mt-12">
           <a
-            href="#contato"
+            href="https://wa.me/5511992401530"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-[#d7a21e] hover:bg-[#c89219] text-white rounded-full font-[BrandonBold] text-lg transition-all shadow-md hover:shadow-lg"
           >
             Agendar Atendimento

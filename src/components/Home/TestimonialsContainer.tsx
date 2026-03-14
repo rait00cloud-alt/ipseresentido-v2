@@ -40,7 +40,7 @@ export default function TestimonialsContainer() {
 
             {/* Botão */}
             <a
-              href="https://g.page/r/YOUR_GOOGLE_PLACE_ID/review"
+              href="https://share.google/5p3oLwrrifWBZ6mj2"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[#d7a21e] hover:bg-[#c89219] text-white rounded-full font-[BrandonBold] text-lg transition-colors shadow-md hover:shadow-lg"
