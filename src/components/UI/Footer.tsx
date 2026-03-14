@@ -78,9 +78,9 @@ const FooterComponent = () => {
             </div>
           </div>
            {/* Google Maps */}
-      <div className="flex-1 w-full aspect-video md:h-auto rounded-xl overflow-hidden">
+      <div className="flex-1 w-full md:h-auto rounded-xl sm:aspect-video overflow-hidden">
         <iframe
-          className="w-full h-full border-0"
+          className="w-full sm:h-full h-[200px] border-0"
           loading="lazy"
           allowFullScreen
            src="https://www.google.com/maps/embed?pb=!4v1773494724288!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDkxWnF3S2c.!2m2!1d-22.96961644080089!2d-46.53508149827748!3f99.80888425030565!4f1.1225062172494376!5f0.7820865974627469"
