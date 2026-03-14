@@ -12,6 +12,9 @@ const SERVICES = [
   { label: "Avaliação Psicológica Infantil", slug: "avaliacao-psicologica-infantil" },
   { label: "Avaliação Bariátrica", slug: "avaliacao-bariatrica" },
   { label: "Avaliação para Vasectomia", slug: "avaliacao-vasectomia" },
+  { label: "Grupos Terapêuticos", slug: "grupos-terapeuticos" },
+  { label: "Avaliação de Personalidade", slug: "avaliacao-personalidade" },
+  { label: "Psicoterapia Online", slug: "psicoterapia-online" },
   { label: "Orientação a Pais", slug: "orientacao-a-pais" },
   { label: "Atendimento de Brasileiros no Exterior", slug: "atendimento-brasileiros-exterior" },
   { label: "Palestras para Empresas e Escolas", slug: "palestras-empresas" },
@@ -181,7 +184,7 @@ export default function HeaderComponent() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed inset-0 bg-[#f3ebe5]/95 z-[99] flex flex-col justify-start items-start px-12 pt-28 overflow-y-auto"
+            className="fixed inset-0 bg-[#f3ebe5]/95 z-[99] flex flex-col justify-start items-start px-12 pt-56 overflow-y-auto"
           >
             <nav className="flex flex-col gap-6 mb-12 w-full">
               {MENU_ITEMS.map((item, i) =>

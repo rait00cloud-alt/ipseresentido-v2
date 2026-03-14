@@ -51,7 +51,7 @@ const team = [
     cardBg: "#ffffff",
     name: "Thayla M.",
     role: "CRP 06/197097",
-    bio: "Sou formada em Psicologia, Mestre em Avaliação Psicológica com ênfase em Saúde Mental. Especialista em Avaliação Psicológica, Psicanálise e Saúde Mental e Psicopatologia. Dedico boa parte do meu tempo aos estudos, buscando constantemente aprimorar meus conhecimentos da prática clínica psicanalítica. Atualmente, atuo na área clínica com atendimentos a crianças, adultos e casais, além de avaliações.",
+    bio: "Sou formada em Psicologia, Mestre em Avaliação Psicológica com ênfase em Saúde Mental. Especialista em Avaliação Psicológica, Psicanálise e Saúde Mental e Psicopatologia. Dedico boa parte do meu tempo aos estudos, buscando constantemente aprimorar meus conhecimentos da prática clínica psicanalítica. Atualmente, atuo na área clínica com atendimentos a crianças, adultos e casais, além de avaliações. Busco sempre oferecer um ambiente seguro e acolhedor para explorar emoções, pensamentos, comportamentos, abarcando angústias vivenciadas por cada indivíduo.",
     image: "/psicologos/thayla-m.jpg",
     email: "contato@ipsersentido.com.br",
     whatsapp: "5511992401530"

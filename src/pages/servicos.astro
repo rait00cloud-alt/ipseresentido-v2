@@ -2,84 +2,47 @@
 import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/Contato/Form';
 
-const services = [
+const sections = [
   {
-    slug: "psicoterapia-adulto",
-    title: "Psicoterapia Adulto",
-    description: "Acompanhamento psicológico para adultos em processos de autoconhecimento, desenvolvimento emocional e superação de desafios.",
-    image: "/photos/psi-adulto.jpg"
+    label: "Psicoterapia",
+    services: [
+      { slug: "psicoterapia-adulto", title: "Psicoterapia Adulto", description: "Acompanhamento psicológico para adultos em processos de autoconhecimento, desenvolvimento emocional e superação de desafios.", image: "/photos/psi-adulto.jpg" },
+      { slug: "psicoterapia-casal", title: "Psicoterapia Casal", description: "Atendimento especializado para casais que buscam fortalecer vínculos, resolver conflitos e construir relações mais saudáveis.", image: "/photos/terapia-de-casal.avif" },
+      { slug: "psicoterapia-infantil", title: "Psicoterapia Infantil", description: "Atendimento psicológico para crianças, promovendo desenvolvimento emocional saudável através de técnicas lúdicas e acolhedoras.", image: "/photos/psi-infantil.jpg" },
+      { slug: "psicoterapia-adolescentes", title: "Psicoterapia para Adolescentes", description: "Acompanhamento especializado para adolescentes em fase de transformações, auxiliando no desenvolvimento da identidade e autonomia.", image: "/photos/psci-adolescentes.webp" },
+      { slug: "psicoterapia-idoso", title: "Psicoterapia para Idosos", description: "Acompanhamento psicológico especializado para idosos, promovendo qualidade de vida, autonomia e bem-estar emocional.", image: "/photos/psicoterapia-idoso.jpeg" },
+      { slug: "psicoterapia-online", title: "Psicoterapia Online", description: "Atendimento psicológico online com a mesma qualidade e acolhimento do presencial, para quem prefere ou precisa de flexibilidade.", image: "/photos/psi-online.png" },
+      { slug: "grupos-terapeuticos", title: "Grupos Terapêuticos", description: "Espaço de escuta, troca e crescimento coletivo. Os grupos terapêuticos oferecem suporte emocional em um ambiente seguro e acolhedor.", image: "/photos/atend-grupo.png" },
+    ]
   },
   {
-    slug: "psicoterapia-casal",
-    title: "Psicoterapia Casal",
-    description: "Atendimento especializado para casais que buscam fortalecer vínculos, resolver conflitos e construir relações mais saudáveis.",
-    image: "/photos/terapia-de-casal.avif"
+    label: "Avaliação Psicológica",
+    services: [
+      { slug: "avaliacao-psicologica-adulto", title: "Avaliação Psicológica Adulto", description: "Processo completo de avaliação para compreender aspectos emocionais, cognitivos e comportamentais.", image: "/photos/av-personalidade.jpg" },
+      { slug: "avaliacao-psicologica-infantil", title: "Avaliação Psicológica Infantil", description: "Avaliação especializada para crianças, identificando necessidades e potencialidades do desenvolvimento.", image: "/photos/05.jpg" },
+      { slug: "avaliacao-personalidade", title: "Avaliação de Personalidade", description: "Avaliação psicológica aprofundada para compreender traços de personalidade, padrões emocionais e comportamentais.", image: "/photos/av-personalidade.jpg" },
+    ]
   },
   {
-    slug: "psicoterapia-infantil",
-    title: "Psicoterapia Infantil",
-    description: "Atendimento psicológico para crianças, promovendo desenvolvimento emocional saudável através de técnicas lúdicas e acolhedoras.",
-    image: "/photos/psi-infantil.jpg"
+    label: "Avaliações para Procedimentos",
+    services: [
+      { slug: "avaliacao-bariatrica", title: "Avaliação Bariátrica", description: "Avaliação psicológica especializada para pacientes que irão realizar cirurgia bariátrica, conforme exigências médicas.", image: "/photos/aval-bariatrica.jpg" },
+      { slug: "avaliacao-vasectomia", title: "Avaliação para Vasectomia", description: "Avaliação psicológica obrigatória para homens que desejam realizar o procedimento de vasectomia.", image: "/photos/aval-vasectomia.png" },
+    ]
   },
   {
-    slug: "psicoterapia-adolescentes",
-    title: "Psicoterapia para Adolescentes",
-    description: "Acompanhamento especializado para adolescentes em fase de transformações, auxiliando no desenvolvimento da identidade e autonomia.",
-    image: "/photos/psci-adolescentes.webp"
-  },
-  {
-    slug: "avaliacao-bariatrica",
-    title: "Avaliação Bariátrica",
-    description: "Avaliação psicológica especializada para pacientes que irão realizar cirurgia bariátrica, conforme exigências médicas.",
-    image: "/photos/aval-bariatrica.jpg"
-  },
-  {
-    slug: "avaliacao-psicologica-adulto",
-    title: "Avaliação Psicológica Adulto",
-    description: "Processo completo de avaliação para compreender aspectos emocionais, cognitivos e comportamentais.",
-    image: "/photos/av-personalidade.jpg"
-  },
-  {
-    slug: "avaliacao-psicologica-infantil",
-    title: "Avaliação Psicológica Infantil",
-    description: "Avaliação especializada para crianças, identificando necessidades e potencialidades do desenvolvimento.",
-    image: "/photos/psi-infantil.jpg"
-  },
-  {
-    slug: "orientacao-a-pais",
-    title: "Orientação a Pais",
-    description: "Suporte e orientação para pais no desenvolvimento saudável e emocional dos filhos.",
-    image: "/photos/clinica-02.png"
-  },
-  {
-    slug: "atendimento-brasileiros-exterior",
-    title: "Atendimento de Brasileiros no Exterior",
-    description: "Atendimento online especializado para brasileiros que vivem fora do país.",
-    image: "/photos/psi-brasileiros-no-exterior.jpg"
-  },
-  {
-    slug: "palestras-empresas",
-    title: "Palestras para Empresas e Escolas",
-    description: "Palestras sobre saúde mental, liderança, bullying e neurodesenvolvimento para empresas e escolas.",
-    image: "/photos/palestra-emp-escolas.png"
-  },
-  {
-    slug: "psicoterapia-idoso",
-    title: "Psicoterapia para Idosos",
-    description: "Acompanhamento psicológico especializado para idosos, promovendo qualidade de vida, autonomia e bem-estar emocional.",
-    image: "/photos/psicoterapia-idoso.jpeg"
-  },
-  {
-    slug: "avaliacao-vasectomia",
-    title: "Avaliação Psicológica para Vasectomia",
-    description: "Avaliação psicológica obrigatória para homens que desejam realizar o procedimento de vasectomia.",
-    image: "/photos/aval-vasectomia.png"
+    label: "Outros Serviços",
+    services: [
+      { slug: "orientacao-a-pais", title: "Orientação a Pais", description: "Suporte e orientação para pais no desenvolvimento saudável e emocional dos filhos.", image: "/photos/clinica-02.png" },
+      { slug: "atendimento-brasileiros-exterior", title: "Atendimento de Brasileiros no Exterior", description: "Atendimento online especializado para brasileiros que vivem fora do país.", image: "/photos/psi-brasileiros-no-exterior.jpg" },
+      { slug: "palestras-empresas", title: "Palestras para Empresas e Escolas", description: "Palestras sobre saúde mental, liderança, bullying e neurodesenvolvimento para empresas e escolas.", image: "/photos/palestra-emp-escolas.png" },
+    ]
   }
 ];
 ---
 
 <Layout title="Serviços - Instituto Ser e Sentido">
-  <div class="w-full min-h-screen  bg-gradient-to-b from-[#faf0f5] to-[#faf8f5] py-24 sm:py-32 gap-8 flex flex-col">
+  <div class="w-full min-h-screen   bg-[#e8e0d0]/70 py-24 sm:py-32 gap-8 flex flex-col">
     
     {/* Hero */}
     <section class="w-full  px-8 md:px-16">
@@ -95,33 +58,44 @@ const services = [
 
     {/* Grid de Serviços */}
     <section class="w-full py-4 px-8 md:px-16">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-        {services.map((service) => (
-          <a
-            href={`/servicos/${service.slug}`}
-            class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all"
-          >
-            <div class="relative h-64 overflow-hidden">
-              <img
-                src={service.image}
-                alt={service.title}
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              <h2 class="absolute bottom-6 left-6 text-2xl md:text-3xl font-[BrandonBold] text-white">
-                {service.title}
-              </h2>
+      <div class="max-w-7xl mx-auto flex flex-col gap-16">
+        {sections.map((section) => (
+          <div>
+            <div class="flex items-center gap-3 mb-8">
+              <img src="/logo/favicon.png" alt="" class="w-3 h-3 opacity-70" />
+              <h2 class="text-xs font-[BrandonBold] text-[#d7a21e] uppercase tracking-widest">{section.label}</h2>
+              <div class="flex-1 h-px bg-[#d7a21e]/20"></div>
             </div>
-            <div class="p-6">
-              <p class="text-[#6a5a4a] font-[BrandonRegular] leading-relaxed mb-4">
-                {service.description}
-              </p>
-              <span class="inline-flex items-center gap-2 text-[#d7a21e] font-[BrandonMedium] group-hover:gap-4 transition-all">
-                Saiba mais
-                <span>→</span>
-              </span>
+            <div class="grid md:grid-cols-2 gap-8">
+              {section.services.map((service) => (
+                <a
+                  href={`/servicos/${service.slug}`}
+                  class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all"
+                >
+                  <div class="relative h-64 overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <h3 class="absolute bottom-6 left-6 text-2xl md:text-3xl font-[BrandonBold] text-white">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-[#6a5a4a] font-[BrandonRegular] leading-relaxed mb-4">
+                      {service.description}
+                    </p>
+                    <span class="inline-flex items-center gap-2 text-[#d7a21e] font-[BrandonMedium] group-hover:gap-4 transition-all">
+                      Saiba mais
+                      <span>→</span>
+                    </span>
+                  </div>
+                </a>
+              ))}
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>

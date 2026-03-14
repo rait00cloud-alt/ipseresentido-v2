@@ -33,59 +33,17 @@ const services = [
   },
   {
     id: 5,
-    title: "Avaliação Bariátrica",
-    text: "Avaliação psicológica especializada para pacientes que irão realizar cirurgia bariátrica, conforme exigências médicas.",
-    image: "/photos/aval-bariatrica.jpg",
-    slug: "avaliacao-bariatrica"
-  },
-  {
-    id: 6,
-    title: "Avaliação Psicológica Adulto",
-    text: "Processo completo de avaliação para compreender aspectos emocionais, cognitivos e comportamentais.",
-    image: "/photos/av-personalidade.jpg",
-    slug: "avaliacao-psicologica-adulto"
-  },
-  {
-    id: 7,
-    title: "Avaliação Psicológica Infantil",
-    text: "Avaliação especializada para crianças, identificando necessidades e potencialidades do desenvolvimento.",
-    image: "/photos/psi-infantil.jpg",
-    slug: "avaliacao-psicologica-infantil"
-  },
-  {
-    id: 8,
     title: "Orientação a Pais",
     text: "Suporte e orientação para pais no desenvolvimento saudável e emocional dos filhos.",
     image: "/photos/clinica-02.png",
     slug: "orientacao-a-pais"
   },
   {
-    id: 9,
-    title: "Atendimento de Brasileiros no Exterior",
-    text: "Atendimento online especializado para brasileiros que vivem fora do país.",
-    image: "/photos/psi-brasileiros-no-exterior.jpg",
-    slug: "atendimento-brasileiros-exterior"
-  },
-  {
-    id: 10,
+    id: 6,
     title: "Palestras para Empresas e Escolas",
     text: "Palestras sobre saúde mental, liderança, bullying e neurodesenvolvimento para empresas e escolas.",
     image: "/photos/palestra-emp-escolas.png",
     slug: "palestras-empresas"
-  },
-  {
-    id: 11,
-    title: "Psicoterapia para Idosos",
-    text: "Acompanhamento psicológico especializado para idosos, promovendo qualidade de vida, autonomia e bem-estar emocional.",
-    image: "/photos/psicoterapia-idoso.jpeg",
-    slug: "psicoterapia-idoso"
-  },
-  {
-    id: 12,
-    title: "Avaliação Psicológica para Vasectomia",
-    text: "Avaliação psicológica obrigatória para homens que desejam realizar o procedimento de vasectomia.",
-    image: "/photos/aval-vasectomia.png",
-    slug: "avaliacao-vasectomia"
   }
 ];
 
