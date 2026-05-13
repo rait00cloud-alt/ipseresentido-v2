@@ -1,7 +1,7 @@
 ---
 title: "Psicoterapia não é uma linha reta: é um caminho em espiral"
 description: "Entenda por que o processo terapêutico não acontece em linha reta, mas como um movimento em espiral de autoconhecimento, mudança e elaboração da própria história."
-cover: "ChatGPT Image 13 de mai. de 2026, 10_46_30.png"
+cover: "https://res.cloudinary.com/duqquulax/image/upload/ChatGPT_Image_13_de_mai._de_2026_10_46_30_dqt1sx"
 date: "2026-05-13"
 data: "Mai, 13, 2026"
 type: "Psicoterapia"
